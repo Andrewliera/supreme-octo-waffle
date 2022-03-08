@@ -5,9 +5,5 @@ def counts_bits(x):
 		x >>= 1
 	return num_bits
 
-x = 1234567890
-def hello():
-	return("Hello World")
-print(hello())
 
 print(counts_bits(x))
