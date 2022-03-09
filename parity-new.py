@@ -11,3 +11,22 @@ def parityThree(x):
         ^ PRECOMPUTED_PARITY[ (x >> MASK_SIZE) & BIT_MASK]#  xor then & again
         ^ PRECOMPUTED_PARITY[x & BIT_MASK]) # 
         
+
+# another approach is using simple parity properties of xor 
+# xor has two properties that help us reduce the time complexity
+# it does not matter how we group bits == associative 
+# the order does not impact the result == commutative 
+
+# tldr -> parity of 64 bit == <32 bit sub-word> & <32 bit sub-word>
+#         -> 32 bit -> <16 bit sub-word> & <16 bit sub-word>
+#            -> so on and so forth till & with 00000001
+
+def parityFour(x):
+    x ^= x >> 32
+    x ^= x >> 16
+    x ^= x >> 8 
+    x ^= x >> 4
+    x ^= x >> 2
+    x ^= x >> 1
+    return x & 0x1
+    
