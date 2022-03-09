@@ -5,6 +5,9 @@ def counts_bits(x):
 		x >>= 1
 	return num_bits
 
+<<<<<<< HEAD
 x = 1234567890
+=======
+>>>>>>> refs/remotes/origin/master
 
 print(counts_bits(x))
