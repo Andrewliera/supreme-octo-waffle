@@ -31,3 +31,7 @@ def int_bit_weight(x):
             x ^= (i << i) | (i << (i + 1))
             return x
     raise ValueError('All bits are 0 or 1')
+
+# there is an additional variant of this problem asking for O(1) tim and space complexity
+# https://stackoverflow.com/questions/38523733/find-the-closest-integer-with-same-weight-o1
+# is a good resource i found for this problems 

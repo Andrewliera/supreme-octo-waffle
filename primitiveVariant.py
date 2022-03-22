@@ -40,3 +40,6 @@ def compute_x_mod_a(x, power):
 
 def isPowerOftwo(x):    
     return (x & (x - 1)) == 0
+#there is an exception where x = 0 will return 0 which is true
+#an alternative solution taking care of this is 
+# return (x != 0) && ((x & (x -1)) == 0)            -> Greg Hewgill for a clearer explenation
