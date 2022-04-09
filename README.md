@@ -22,6 +22,6 @@ As far as I can tell the references I will be using for this code are[^1]:
 
 
 
-[^1] got both references from Tren Black on YT
+[^1] got both references from Tren Black, Nick White and KC on YT
 [^2] Joseph V. Boss has informational videos called pen&paper programming going through the book
      I like to read over the book and go through a video to reinforce the concept.
