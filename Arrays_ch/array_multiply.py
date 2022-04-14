@@ -18,12 +18,9 @@ def array_multiply(num1, num2):
     for i in reversed(range(len(num1))):
         for j in reversed(range(len(num2))):
             result[i + j + 1] += num1[i] * num2[j]
-            result[i + j] += result[ i + j + 1] // 10
+            result[i + j] += result[ i + j + 1] // 10 #putting a break helps to see the arithmatic being done
             result[i + j + 1] %= 10
     #the author uses the code below to remove leading zeros
     result = result[next((i for i, x in enumerate(result)
         if x != 0), len(result)):] or [0]
     return sign * result[0] + result[1:]
-temp1 = [2,2,0]
-temp2 = [1,0]
-array_multiply(temp1,temp2)
