@@ -12,10 +12,10 @@
 #       123454321 
 # 
 #   the better approach the book describes is 
-#   in a way doing this while extracting digits
-#   in a way similar to rever_digits
+#   extracting digits
+#   similar to rever_digits
 #   we can extract the least significant bit with x mod 10
-#   but we can also extract the msot significant bit 
+#   but we can also extract the most significant bit 
 #   with the formula x/10^(n-1) 
 #   we iteratively compare digits, and in each iteration extract the digits
 #
