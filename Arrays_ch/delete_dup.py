@@ -12,6 +12,11 @@
 # however with this approach, if all entries are equal then the big O == O(n^2)
 # the number of shifts is (n -1)+(n -2)+...+2+1 
 # 
+# the book explains that the trick here is utilizing the fact that the array is sorted
+# duplicate elements will be next to each other, so we can reduce how much we check the array
+# we will be moving just one elements, instead of the entire subaray
+# 
+# 
 # #
 def delete_duplicates(A):
     if not A:
